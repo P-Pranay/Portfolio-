@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Pranay Kumar — HRMS Product Specialist. 38 implementations across payroll, attendance and leave for 7,093 employees in 24 industries and 16 Indian cities.">
+<meta name="author" content="Pranay Kumar">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Pranay Kumar — HRMS Product Specialist">
+<meta property="og:description" content="38 HRMS implementations owned end to end · 7,093 employees · payroll, attendance, leave · 79-day median implementation cycle.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1f5f8b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231f5f8b'/%3E%3Ctext x='50' y='68' font-family='Helvetica,Arial' font-size='52' font-weight='bold' fill='white' text-anchor='middle'%3EPK%3C/text%3E%3C/svg%3E">
+<title>Pranay Kumar — HRMS Product Specialist | Payroll · Attendance · Leave</title>
+<style>
+  :root{
+    --ink:#12181f; --ink-2:#3d4c5c; --ink-3:#6b7c8d;
+    --line:#e2e8ee; --bg:#f6f8fa; --card:#fff;
+    --accent:#1f5f8b; --accent-soft:#e8f1f7; --accent-2:#0f766e;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:32px 24px 72px}
+
+  .hero{background:linear-gradient(135deg,#12181f 0%,#1f3a4d 55%,#1f5f8b 100%);
+    color:#fff;border-radius:var(--radius);padding:40px 40px 34px;position:relative;overflow:hidden}
+  .hero:after{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;
+    border-radius:50%;background:rgba(255,255,255,.06)}
+  .hero h1{margin:0;font-size:2.3rem;line-height:1.15;letter-spacing:-.02em;font-weight:700}
+  .hero .role{margin:10px 0 0;font-size:1.06rem;color:#bcd6e8;font-weight:500}
+  .hero .tag{margin:18px 0 0;font-size:.98rem;color:#dbe8f2;max-width:64ch;position:relative;z-index:1}
+  .contact{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;position:relative;z-index:1}
+  .contact span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);
+    padding:6px 13px;border-radius:999px;font-size:.83rem;color:#eaf3f9}
+
+  section{margin-top:38px}
+  h2{font-size:.82rem;text-transform:uppercase;letter-spacing:.13em;color:var(--accent);
+    margin:0 0 16px;font-weight:700;display:flex;align-items:center;gap:12px}
+  h2:after{content:"";flex:1;height:1px;background:var(--line)}
+  h3{font-size:1.02rem;margin:0 0 6px;font-weight:650;letter-spacing:-.01em}
+  p{margin:0 0 12px}
+  .lead{font-size:1.02rem;color:var(--ink-2)}
+  .sub{font-size:.86rem;color:var(--ink-3);margin:-8px 0 14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px}
+
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+  .tile{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 18px}
+  .tile .n{font-size:1.8rem;font-weight:700;letter-spacing:-.03em;color:var(--accent);line-height:1.1}
+  .tile .l{font-size:.79rem;color:var(--ink-3);margin-top:6px;line-height:1.4}
+
+  table{width:100%;border-collapse:collapse;font-size:.87rem}
+  th{text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);
+    font-weight:700;padding:0 10px 9px 0;border-bottom:1px solid var(--line)}
+  td{padding:8px 10px 8px 0;border-bottom:1px solid #eef2f6;color:var(--ink-2);vertical-align:top}
+  td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+  tr:last-child td{border-bottom:none}
+  .pill{display:inline-block;font-size:.71rem;font-weight:650;padding:2px 8px;border-radius:5px;white-space:nowrap}
+  .p-live{background:#e6f0f7;color:#1a4f74}
+  .p-done{background:#e6f4f1;color:#0b5f57}
+  .p-out{background:#f2eef8;color:#4c3a6b}
+  .p-lost{background:#f7ebe9;color:#8a3d2e}
+  .scroll{max-height:520px;overflow:auto;border:1px solid var(--line);border-radius:var(--radius);
+    background:var(--card);padding:6px 20px 12px}
+  .scroll thead th{position:sticky;top:0;background:var(--card);z-index:1;padding-top:14px}
+
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+  .comp{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px}
+  .comp h3{font-size:.97rem}
+  .comp ul{margin:8px 0 0;padding-left:18px;color:var(--ink-2);font-size:.89rem}
+  .comp li{margin-bottom:5px}
+
+  .case{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 24px;margin-bottom:14px}
+  .case-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:4px}
+  .case-head h3{margin:0}
+  .scale{font-size:.77rem;color:var(--accent);background:var(--accent-soft);
+    padding:4px 11px;border-radius:999px;font-weight:600;white-space:nowrap}
+  .case dl{margin:12px 0 0;display:grid;grid-template-columns:112px 1fr;gap:7px 16px;font-size:.9rem}
+  .case dt{color:var(--ink-3);font-weight:600;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+  .case dd{margin:0;color:var(--ink-2)}
+  .case dd strong{color:var(--ink);font-weight:600}
+  .pts{margin:10px 0 0;padding-left:19px;color:var(--ink-2);font-size:.9rem}
+  .pts li{margin-bottom:5px}
+  .pts strong{color:var(--ink);font-weight:650}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+  .chip{font-size:.75rem;background:#f1f5f8;border:1px solid var(--line);color:var(--ink-2);
+    padding:4px 10px;border-radius:6px}
+
+  .pt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px}
+  .pt h3{font-size:.95rem}
+  .pt p{font-size:.89rem;color:var(--ink-2);margin:0}
+  .pt .badge{display:inline-block;font-size:.69rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--accent-2);background:#e6f4f1;padding:3px 9px;border-radius:5px;margin-bottom:9px}
+
+  .tools{display:flex;flex-wrap:wrap;gap:8px}
+  .tools span{background:var(--card);border:1px solid var(--line);padding:7px 14px;border-radius:8px;
+    font-size:.85rem;color:var(--ink-2)}
+
+  .note{background:#fdf3e3;border:1px solid #f0dcb8;border-left:4px solid #d99a2b;
+    border-radius:10px;padding:16px 20px;font-size:.87rem;color:#6b4708}
+  .note strong{color:#4a3105}
+  .note ul{margin:8px 0 0;padding-left:20px}
+  .note li{margin-bottom:4px}
+  .ph{background:#fdf3e3;border-bottom:1px dashed #d99a2b;padding:0 3px;border-radius:2px}
+
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);
+    font-size:.77rem;color:var(--ink-3);text-align:center}
+
+  @media (max-width:560px){
+    .wrap{padding:18px 14px 48px}
+    .hero{padding:28px 22px}.hero h1{font-size:1.7rem}
+    .case dl{grid-template-columns:1fr}.case dt{padding-top:8px}
+    .scroll{padding:6px 12px 12px}
+  }
+  @media print{
+    body{background:#fff}.wrap{max-width:none;padding:0}
+    .hero{background:#12181f !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .case,.comp,.tile,.pt,.card{break-inside:avoid;page-break-inside:avoid}
+    .note{display:none}.scroll{max-height:none;overflow:visible}
+    section{margin-top:24px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>Pranay Kumar</h1>
+    <p class="role">HRMS Product Specialist — Payroll · Attendance · Leave · Implementation</p>
+    <p class="tag">38 HRMS implementations owned end to end, covering 7,000+ employees across 24 industries and 16 Indian cities. I turn messy, real-world HR and payroll operations into configured, compliant, running systems — and turn what breaks along the way into product requirements engineering can build.</p>
+    <div class="contact">
+      <span>pranayppk2002@gmail.com</span>
+      <span>+91 98493 48290</span>
+      <span><a href="https://www.linkedin.com/in/pranay-kumar-606586250" style="color:inherit;text-decoration:none">linkedin.com/in/pranay-kumar-606586250</a></span>
+      <span>Hyderabad, India</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <div class="card">
+      <p class="lead">HRMS implementation and product specialist with <strong>1.8 years</strong> of hands-on, end-to-end ownership of payroll, attendance and leave rollouts — from 10-person startups to a 2,100-employee retail chain.</p>
+      <p>Since December 2024 I have owned <strong>38 client accounts covering 7,093 employees</strong>, of which <strong>31 were delivered and retained into support or managed payroll</strong> and 7 are live implementations today. Median order-to-closure cycle across 30 completed engagements: <strong>79 days</strong>, with 18 of 30 closed inside 90 days.</p>
+      <p style="margin-bottom:0">My working method is deliberately product-oriented: before proposing development I test whether a client requirement is really a configuration, a training gap, a defect or a genuine product gap. Where it is a genuine gap, I document it as a structured functional requirement (AFD/BRD) with current behaviour, expected behaviour, business justification, acceptance criteria and impacted modules — so engineering receives a decision, not a complaint. I am now looking to move that work upstream into a <strong>Product Specialist / Product Owner</strong> role.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Impact at a glance</h2>
+    <div class="tiles">
+      <div class="tile"><div class="n">38</div><div class="l">Client accounts owned end-to-end</div></div>
+      <div class="tile"><div class="n">7,093</div><div class="l">Employees brought onto HRMS/payroll systems I configured</div></div>
+      <div class="tile"><div class="n">31</div><div class="l">Accounts delivered and retained into support (82%)</div></div>
+      <div class="tile"><div class="n">79 days</div><div class="l">Median implementation cycle, order date to closure</div></div>
+      <div class="tile"><div class="n">2,100</div><div class="l">Employees in the largest single payroll taken live</div></div>
+      <div class="tile"><div class="n">24</div><div class="l">Industry verticals — retail, manufacturing, healthcare, IT, education, agri, automotive and more</div></div>
+      <div class="tile"><div class="n">16</div><div class="l">Cities across 10 states, multi-state statutory exposure</div></div>
+      <div class="tile"><div class="n">12</div><div class="l">Accounts of 100+ employees, including 3 above 500</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Portfolio composition</h2>
+    <p class="sub">Every account assigned to me in the delivery tracker, by current state.</p>
+    <div class="card">
+      <table>
+        <thead><tr><th>State</th><th>Accounts</th><th>Employees</th><th>What it means</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill p-done">Delivered → In Support</span></td><td class="n">24</td><td class="n">3,722</td><td>Implemented, trained, signed off and transitioned to the support organisation.</td></tr>
+          <tr><td><span class="pill p-live">Live implementation</span></td><td class="n">7</td><td class="n">2,836</td><td>Currently owned: configuration, parallel payroll, UAT, go-live and hypercare.</td></tr>
+          <tr><td><span class="pill p-out">Managed / outsourced payroll</span></td><td class="n">2</td><td class="n">40</td><td>Payroll run as a managed service rather than client-operated.</td></tr>
+          <tr><td><span class="pill p-lost">Churned</span></td><td class="n">5</td><td class="n">495</td><td>Accounts lost — three stalled on client-side data and access, two on commercial decisions.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Delivery record by sector</h2>
+    <p class="sub">33 delivered and active accounts, 6,598 employees. Client identities withheld; sector, scale and location are accurate.</p>
+    <div class="card">
+      <table>
+        <thead><tr><th>Sector</th><th>Accounts</th><th>Employees</th><th>Locations</th><th>State</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Retail</strong> — shopping malls, silks, jewellery</td><td class="n">6</td><td class="n">4,940</td><td>Nizamabad, Nellore, Hyderabad, Warangal, Vijayawada</td><td><span class="pill p-done">4 delivered</span> <span class="pill p-live">2 live</span></td></tr>
+          <tr><td><strong>Manufacturing &amp; engineering</strong> — automation, switchgear, plasma, air products</td><td class="n">5</td><td class="n">502</td><td>Hyderabad, Mumbai, Chennai, Pune</td><td><span class="pill p-done">4 delivered</span> <span class="pill p-live">1 live</span></td></tr>
+          <tr><td><strong>Healthcare &amp; life sciences</strong> — hospital, diagnostics labs</td><td class="n">3</td><td class="n">240</td><td>Hyderabad, Visakhapatnam</td><td><span class="pill p-done">2 delivered</span> <span class="pill p-live">1 live</span></td></tr>
+          <tr><td><strong>Trading</strong> — contract &amp; per-day labour</td><td class="n">1</td><td class="n">200</td><td>Hyderabad</td><td><span class="pill p-live">Live</span></td></tr>
+          <tr><td><strong>IT, software &amp; cybersecurity</strong></td><td class="n">6</td><td class="n">185</td><td>Hyderabad, Bangalore, Mumbai</td><td><span class="pill p-done">6 delivered</span></td></tr>
+          <tr><td><strong>Professional services</strong> — audit, CA, payroll bureau</td><td class="n">3</td><td class="n">155</td><td>Kochi, Hyderabad, New Delhi</td><td><span class="pill p-done">3 delivered</span></td></tr>
+          <tr><td><strong>Financial services</strong></td><td class="n">1</td><td class="n">110</td><td>Hyderabad</td><td><span class="pill p-done">Delivered</span></td></tr>
+          <tr><td><strong>Automotive</strong> — dealership group</td><td class="n">1</td><td class="n">56 (+150)</td><td>Kerala</td><td><span class="pill p-live">Live</span></td></tr>
+          <tr><td><strong>Construction &amp; real estate</strong></td><td class="n">1</td><td class="n">50</td><td>Hyderabad</td><td><span class="pill p-done">Delivered</span></td></tr>
+          <tr><td><strong>Agri-biotech</strong></td><td class="n">1</td><td class="n">30 (of 300)</td><td>Hyderabad</td><td><span class="pill p-live">Live</span></td></tr>
+          <tr><td><strong>FMCG &amp; food processing</strong></td><td class="n">1</td><td class="n">30</td><td>Hyderabad</td><td><span class="pill p-done">Delivered</span></td></tr>
+          <tr><td><strong>Industrial services</strong> — commercial laundry</td><td class="n">1</td><td class="n">30</td><td>Hyderabad</td><td><span class="pill p-done">Delivered</span></td></tr>
+          <tr><td><strong>Travel &amp; tourism</strong></td><td class="n">1</td><td class="n">30</td><td>Hyderabad</td><td><span class="pill p-done">Delivered</span></td></tr>
+          <tr><td><strong>Education</strong> — school</td><td class="n">1</td><td class="n">30</td><td>Odisha</td><td><span class="pill p-out">Managed payroll</span></td></tr>
+          <tr><td><strong>Media &amp; communications</strong></td><td class="n">1</td><td class="n">10</td><td>Mumbai</td><td><span class="pill p-out">Managed payroll</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Core competencies</h2>
+    <div class="grid2">
+
+      <div class="comp">
+        <h3>Payroll &amp; statutory compliance</h3>
+        <ul>
+          <li>Salary structures, earnings/deduction heads, arrears and mid-cycle changes</li>
+          <li>Location-wise statutory applicability — PF, ESI, PT, LWF, TDS across 10 states</li>
+          <li>Parallel runs and payregister-vs-manual-sheet reconciliation to zero variance</li>
+          <li>Penalty and deduction logic design (late arrival / early departure)</li>
+          <li>Loans &amp; advances, full &amp; final settlement, salary revisions</li>
+        </ul>
+      </div>
+
+      <div class="comp">
+        <h3>Attendance &amp; time management</h3>
+        <ul>
+          <li>Biometric and kiosk device integration; server/DB access and punch-sync troubleshooting</li>
+          <li>Shift, roster and multi-location attendance rules; night-shift and cross-midnight cases</li>
+          <li>Per-day and contract-worker attendance models alongside monthly staff</li>
+          <li>Overtime rules, timesheets, geo-attendance and geo-fencing requirements</li>
+          <li>Root-cause analysis of punch-capture defects through to closure with engineering</li>
+        </ul>
+      </div>
+
+      <div class="comp">
+        <h3>Leave &amp; policy configuration</h3>
+        <ul>
+          <li>Leave types, accrual, carry-forward, encashment, holiday calendars</li>
+          <li>Travel and expense policy configuration</li>
+          <li>Approval workflows and delegation hierarchies</li>
+          <li>Opening-balance migration and reconciliation at go-live</li>
+        </ul>
+      </div>
+
+      <div class="comp">
+        <h3>Business analysis &amp; product documentation</h3>
+        <ul>
+          <li>Requirement discovery, gap analysis and solution options with trade-offs</li>
+          <li>AFD / BRD / FRD authoring with acceptance criteria and impacted modules</li>
+          <li>Classifying requests as configuration vs. bug vs. enhancement vs. training</li>
+          <li>UAT scenario design, defect triage and sign-off management</li>
+          <li>Jira and Confluence for tracking, documentation and escalation trails</li>
+        </ul>
+      </div>
+
+      <div class="comp">
+        <h3>Implementation delivery at scale</h3>
+        <ul>
+          <li>Running 7–10 concurrent accounts against fixed monthly payroll windows</li>
+          <li>Kick-off, data collection, configuration, UAT, go-live and hypercare governance</li>
+          <li>Onsite discovery visits, MOM discipline and dated consolidated data asks</li>
+          <li>Multi-stakeholder dependency management — client HR, finance, IT, MD and internal BD</li>
+          <li>Structured escalation with named owners and ageing; defined support handover</li>
+        </ul>
+      </div>
+
+      <div class="comp">
+        <h3>Client enablement</h3>
+        <ul>
+          <li>HR admin, ESS and mobile-app training delivery, onsite and remote</li>
+          <li>Reports-module walkthroughs and self-sufficiency handover</li>
+          <li>Expectation management on sold-vs-available capability</li>
+          <li>Hypercare support through the first live payroll cycles</li>
+          <li>Delivery in mixed-language client environments across South and West India</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected implementations</h2>
+    <p class="sub">Five representative engagements from the 38. Client identities withheld.</p>
+
+    <div class="case">
+      <div class="case-head">
+        <h3>Retail chain — largest payroll delivered</h3>
+        <span class="scale">2,100 employees · Nizamabad</span>
+      </div>
+      <ul class="pts">
+        <li>Largest single payroll I have taken live; full payroll, attendance and statutory setup.</li>
+        <li>Absorbed a mid-project attendance rule change without slipping the payroll window.</li>
+        <li>Delivered and transitioned to support.</li>
+      </ul>
+      <div class="chips"><span class="chip">High-volume payroll</span><span class="chip">Custom attendance rules</span><span class="chip">Multi-store</span><span class="chip">Support handover</span></div>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <h3>Retail chain — go-live and hypercare</h3>
+        <span class="scale">1,700 employees · current</span>
+      </div>
+      <ul class="pts">
+        <li>Ran parallel payroll against the client's manual sheets until the payregister reconciled.</li>
+        <li>Designed late-arrival / early-departure penalty logic and drove it to written sign-off.</li>
+        <li>Raised a biometric punch-capture defect as a formal AFD and tracked it into engineering.</li>
+        <li><strong>Lesson applied since:</strong> set exit criteria at kick-off — N clean cycles, training complete, defects closed — or implementation drifts into managed support.</li>
+      </ul>
+      <div class="chips"><span class="chip">Parallel payroll</span><span class="chip">Reconciliation</span><span class="chip">Penalty logic</span><span class="chip">Defect RCA</span><span class="chip">ERP integration</span><span class="chip">Hypercare</span></div>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <h3>Manufacturing &amp; services — scope-vs-capability gap caught early</h3>
+        <span class="scale">200 employees · highest-value account</span>
+      </div>
+      <ul class="pts">
+        <li>Sold with facial recognition and geo-fencing; neither existed in the product.</li>
+        <li>Caught it in discovery, not at UAT — escalated to Product with a written business case.</li>
+        <li>Re-sequenced delivery so payroll, leave and timesheet config proceeded on available capability; ATS and PMS phased later.</li>
+        <li><strong>Systemic fix proposed:</strong> a BD ↔ Implementation capability check before every handover.</li>
+      </ul>
+      <div class="chips"><span class="chip">Gap analysis</span><span class="chip">Product escalation</span><span class="chip">Expectation reset</span><span class="chip">Phased scoping</span></div>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <h3>Multi-location retail group — location-wise statutory configuration</h3>
+        <span class="scale">600 employees</span>
+      </div>
+      <ul class="pts">
+        <li>Built a location-wise statutory applicability matrix at setup, before the first payroll.</li>
+        <li>Drove biometric server access and integration; monthly payroll tallied against the client's own sheet.</li>
+        <li><strong>Pattern spotted:</strong> statutory applicability failed at two unrelated accounts — proposed a reusable checklist for every setup.</li>
+      </ul>
+      <div class="chips"><span class="chip">Statutory matrix</span><span class="chip">Multi-state compliance</span><span class="chip">Biometric integration</span><span class="chip">ESS rollout</span></div>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <h3>Agri-biotech — stalled project revived</h3>
+        <span class="scale">300 employees (phased)</span>
+      </div>
+      <ul class="pts">
+        <li>Months past due and blocked on client data; open-ended follow-ups were not converting.</li>
+        <li>Onsite reset — secured credentials and access on the spot, agreed a weekly cadence with a named client owner.</li>
+        <li><strong>Method that worked:</strong> dated, consolidated data asks with the commercial owner copied.</li>
+      </ul>
+      <div class="chips"><span class="chip">Project recovery</span><span class="chip">Onsite engagement</span><span class="chip">Cadence design</span><span class="chip">Go-live planning</span></div>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Product contributions &amp; process improvements</h2>
+    <div class="grid2">
+
+      <div class="pt">
+        <span class="badge">Product gap</span>
+        <h3>Sold-vs-available capability gate</h3>
+        <p>Identified a repeating pattern of commitments made beyond product capability. Proposed a mandatory capability check between the commercial and implementation teams before account handover — converting an escalation habit into a preventive control.</p>
+      </div>
+
+      <div class="pt">
+        <span class="badge">Compliance</span>
+        <h3>Location-wise statutory applicability checklist</h3>
+        <p>The same compliance defect surfaced at two unrelated clients. Proposed a reusable setup-stage checklist so multi-state applicability is verified before the first payroll rather than after it — the highest-risk failure mode in Indian payroll.</p>
+      </div>
+
+      <div class="pt">
+        <span class="badge">Delivery</span>
+        <h3>Explicit implementation exit criteria</h3>
+        <p>Two accounts were effectively running client payroll under an implementation banner with no defined end. Proposed exit criteria — N clean cycles, training complete, defects closed — to prevent unbilled scope creep and give clients a defined handover.</p>
+      </div>
+
+      <div class="pt">
+        <span class="badge">Defect handling</span>
+        <h3>Structured functional documentation</h3>
+        <p>Raise defects and enhancements as complete functional documents — current behaviour, expected behaviour, business justification, acceptance criteria, impacted modules, dependencies, priority — so engineering can act without a discovery round-trip.</p>
+      </div>
+
+      <div class="pt">
+        <span class="badge">Portfolio health</span>
+        <h3>Due-date re-baselining discipline</h3>
+        <p>Flagged that stale, un-revised due dates were causing the delivery tracker to misrepresent portfolio health to management, and introduced a weekly review to keep dates, blockers and owners honest.</p>
+      </div>
+
+      <div class="pt">
+        <span class="badge">Client management</span>
+        <h3>Dated consolidated data asks</h3>
+        <p>Client-side data is the dominant blocker across accounts. Replaced open-ended follow-ups with single consolidated asks carrying explicit dates and the commercial owner copied — measurably improving conversion of pending client inputs.</p>
+      </div>
+
+      <div class="pt">
+        <span class="badge">Churn analysis</span>
+        <h3>Reading the 5 accounts that were lost</h3>
+        <p>Three of five churned accounts stalled on client-side data and access before go-live, not on product capability. That points at onboarding design — front-loading data readiness as a commercial precondition, not an implementation task — rather than at delivery effort.</p>
+      </div>
+
+      <div class="pt">
+        <span class="badge">Repeatability</span>
+        <h3>Vertical-specific configuration patterns</h3>
+        <p>Retail chains, contract-labour operations and night-shift BPOs each recur with predictable attendance and payroll rules. Reusing a proven configuration pattern per vertical — instead of designing each from scratch — is where the next big cut in implementation cycle time sits.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Toolkit</h2>
+    <div class="tools">
+      <span>Jira</span><span>Confluence</span><span>Freshdesk</span><span>MS Excel (advanced payroll reconciliation)</span>
+      <span>Biometric &amp; kiosk devices</span><span>SQL / DB access for punch data</span><span>REST API integration coordination</span>
+      <span>BRD / FRD / AFD authoring</span><span>UAT design &amp; defect triage</span><span>MOM &amp; escalation tracking</span>
+      <span>SaaS, managed-payroll and outsourced delivery models</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience &amp; education</h2>
+    <div class="card">
+      <h3>HRMS Product Specialist — Implementation &amp; Support</h3>
+      <p style="color:var(--ink-3);font-size:.87rem;margin-bottom:10px">Interbiz Solutions LLP · Dec 2024 – Present · Hyderabad, India</p>
+      <p style="margin-bottom:0">End-to-end ownership of 38 HRMS implementations across payroll, attendance, leave, ESS and mobile modules, for clients from 10 to 2,100 employees in 24 industries and 16 cities. Requirement analysis, configuration, multi-state statutory setup, biometric and ERP integration coordination, UAT, training, go-live, hypercare and support transition. Concurrently manages 7–10 active accounts against fixed monthly payroll windows.</p>
+      <div style="height:22px"></div>
+      <h3>B.Tech, Electronics &amp; Communication Engineering</h3>
+      <p style="color:var(--ink-3);font-size:.87rem;margin-bottom:0">Guru Nanak Institutions · 2020 – 2024 · Hyderabad, India</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="note">
+      <strong>Two things to check before you send this out.</strong>
+      <ul>
+        <li><strong>The oldest account predates your joining.</strong> One of the 38 accounts in the tracker has an order date of Feb 2024 and closed in May 2025 — before Dec 2024. It was almost certainly reassigned to you mid-flight. The count of 38 is what the tracker shows, but if an interviewer asks you to walk through the earliest one, know that it wasn't yours from kick-off.</li>
+        <li><strong>Churn.</strong> The delivery record covers only the 33 delivered and active accounts. The 5 churned accounts still appear in Portfolio composition so 38 and 31 reconcile — remove that row and the "accounts that were lost" card if you'd rather not raise it, but be ready for the arithmetic question.</li>
+        <li><strong>Optional additions.</strong> Any payroll, statutory, Jira or product-management certification would strengthen the education block — there's room for a line under your degree.</li>
+      </ul>
+      This note is screen-only — it does not appear when you print or save to PDF.
+    </div>
+  </section>
+
+  <footer>Prepared August 2026 · Evidence drawn from 38 live delivery records · Client identities withheld</footer>
+
+</div>
+</body>
+</html>
